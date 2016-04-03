@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./bootstrap.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/custom.min.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        #search-text-input{
+            border-top:thin solid  #e5e5e5;
+            border-right:thin solid #e5e5e5;
+            border-bottom:thin solid #e5e5e5;
+            border-left:thin solid  #e5e5e5;
+            float:left;
+            height:50px;
+            margin:.8em 0 0 .5em; 
+            outline:0;
+            padding:.4em 0 .4em .4em; 
+            width:90%; 
+        }
+         
+      
+         
+        #button-holder img{
+			float: left;
+			margin: 12.8px 0px 0px 0px;
+            height:50px; 
+        }
+		
+		
+		
+
+        </style>
+  </head>
+  <body>
+   
+
+    <div class="container">
+	<br><br><br><br>
+           <center> <h1 style="font-size: 9em"><font color="#2196f3">S</font><font color="#F90101">e</font><font color="#F2B50F">a</font><font color="#2196f3">r</font><font color="#F90101">c</font><font color="#00933B">h</font></h1>
+		   <br>
+		     <br>
+			<form name="search_form" action="getResult.php" method="POST" autocomplete="off">
+		   <input name="query" type="text"  placeholder="Search it" id="search-text-input"/>
+		   <div id='button-holder'>
+    <submit name="submit" id="submit"><img src='search.png' /></submit>
+			</div>
+		   <br><br>
+		 
+           
+		   <h3 class="lead">search    <font color="#2196f3">http://www.ics.uci.edu</font> domain</h3>
+           
+	</center>
+   </div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+  </body>
+</html>
